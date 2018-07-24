@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>红旅动漫</title>
+
+  <!-- 插件样式 -->
+  <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/swiper-4.3.3.min.css">
+  <!-- 自定义css样式 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- 
+  插件js 
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/template-web.js"></script>
+  <script src="./js/swiper-4.3.3.min.js"></script>
+
+  自定义js 
+  <script src="./js/index.js"></script> 
+  -->
+  <!-- requirejs -->
+  <script src="./js/require.js" defer async="true" data-main="js/main"></script>
+</head>
+
+<body>
+
+
+  <div class="main">
+    <!-- 顶部栏 -->
+    <div class="header">
+      <a class="slide fa fa-bars" href="javascript:"></a>
+      <h4>红旅动漫</h4>
+      <a class="search fa fa-search" href="javascript:"></a>
+
+    </div>
+    <div class="nav">
+      <div class="logo"></div>
+      <ul>
+        <li>
+          <a href="./series.html?episode">
+            <span>连载动漫</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./series.html?topic">
+            <span>专题列表</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>一周更新</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>最新更新</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>热门新番</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>完结动漫</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>新闻列表</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>榜单资讯</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:">
+            <span>关于</span>
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="bg"></div>
+    <div id="loading">
+      <img src="./img/load.gif" alt="">
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide">
+          <a href="http://www.itcast.cn/subject/phoneweb/index.html">
+            <img src="http://ofv795nmp.bkt.clouddn.com/lunbo1.jpg" height="100%" width="100%" alt="">
+            <span>每个月都来给红旅打赏下吧</span>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="http://www.itcast.cn/subject/phoneweb/index.html">
+            <img src="http://ofv795nmp.bkt.clouddn.com/lunbo1.jpg" height="100%" width="100%" alt="">
+            <span>每个月都来给红旅打赏下吧</span>
+          </a>
+        </div> -->
+
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+
+
+    </div>
+    <div class="tab">
+      <!-- <a class="activeTab" href="javascript:">新增连载</a>
+      <span>|</span>
+      <a href="javascript:">新增完结</a>
+      <span>|</span>
+      <a href="javascript:">推荐连载</a>
+      <span>|</span>
+      <a href="javascript:">推荐完结</a> -->
+    </div>
+
+    <ul class="container">
+      <!-- <li>
+        <a href="http://www.itcast.cn/subject/phoneweb/index.html">
+          <div class="cover">
+            <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+            <div class="episode">连载至12集</div>
+          </div>
+          <div class="title">灵能百分百</div>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.itcast.cn/subject/phoneweb/index.html">
+          <div class="cover">
+            <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+            <div class="episode">连载至12集</div>
+          </div>
+          <div class="title">灵能百分百</div>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.itcast.cn/subject/phoneweb/index.html">
+          <div class="cover">
+            <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+            <div class="episode">连载至12集</div>
+          </div>
+          <div class="title">灵能百分百</div>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.itcast.cn/subject/phoneweb/index.html">
+          <div class="cover">
+            <img src="http://ofv795nmp.bkt.clouddn.com/image10.jpg" alt="">
+            <div class="episode">连载至12集</div>
+          </div>
+          <div class="title">灵能百分百</div>
+        </a>
+      </li> -->
+    </ul>
+
+  </div>
+
+</body>
+
+<script type="text/html" id="tpl">
+  {{ each list value }}
+  <li>
+    <a href="{{ value.url }}">
+      <div class="cover">
+        <img src="{{ value.img }}" alt="">
+        <div class="episode">{{ value.update }}</div>
+      </div>
+      <div class="title">{{ value.name }}</div>
+    </a>
+  </li>
+  {{ /each }}
+</script>
+
+<script type="text/html" id="tplBanner">
+  {{ each list value }}
+  <div class="swiper-slide">
+    <a href="{{ value.url }}">
+      <img src="{{ value.img }}" height="100%" width="100%" alt="">
+      <span>{{ value.title }}</span>
+    </a>
+  </div>
+  {{ /each }}
+</script>
+
+</html>

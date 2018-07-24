@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>红旅动漫</title>
+
+  <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/series.css">
+
+  <!-- <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/template-web.js"></script>
+  <script src="./js/series.js"></script> -->
+
+  <script src="./js/require.js" defer async="true" data-main="js/series"></script>
+</head>
+
+<body>
+  <div class="header">
+    <a class="back" href="./index.html">
+      <span class="fa fa-angle-left"></span>
+    </a>
+    <span class="title"></span>
+  </div>
+
+  <div class="container">
+    <ul>
+
+      <!-- <li>
+        <img src="http://ofv795nmp.bkt.clouddn.com/lianzai23.jpg" alt="">
+        <div class="words">
+          <div class="name">Maho Girls 光之美少女！/魔法师光之美少女</div>
+          <div class="small episode">连载至36集</div>
+          <div class="small time">10-11 更新</div>
+          <div class="small count">下载次数: 7450</div>
+        </div>
+      </li> -->
+
+    </ul>
+  </div>
+  <div class="more">加载中...</div>
+
+</body>
+<script type="text/html" id="episodeTpl">
+  {{ each list value }}
+  <li class="ep">
+    <a href="{{ value.url }}">
+      <img src="{{ value.img }}" alt="">
+      <div class="words">
+        <div class="name">{{ value.name }}</div>
+        <div class="small episode">{{ value.episode }}</div>
+        <div class="small time">{{ value.updateTime }}</div>
+        <div class="small count">下载次数: {{ value.downloadCount }}</div>
+      </div>
+    </a>
+  </li>
+  {{ /each }}
+</script>
+<script type="text/html" id="topicTpl">
+  {{ each list value }}
+  <li class="tp">
+    <a href="{{ value.url }}">
+      <img src="{{ value.img }}" alt="">
+      <div class="title">{{ value.title }}</div>
+    </a>
+
+  </li>
+  {{ /each }}
+</script>
+
+</html>
